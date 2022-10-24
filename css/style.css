@@ -1,0 +1,40 @@
+*{
+background: radial-gradient(circle at 50% 130%,#ccac00 10%, #c02425 40%,#850161  80%);
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+width: 100vw;
+justify-content: center;
+align-items: center;
+}
+#board{
+    display:flex;
+    flex-wrap: wrap;
+}
+.box{
+    width:90px;
+    height:90px;
+    border: 1px solid black;
+    background: linear-gradient(to left top,#1681bb,#142ebe,#7b3add, #1fc29c, #7b3add, #243bc0, #1681bb);
+    font-size: 3em;
+    text-align: center;
+    line-height: 90px;
+    margin: 10px;
+    animation: appear 1s;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.8s,color 0.8s, trasform 0.8s;
+}
+.box-click{
+    background-color:#ccc;/*  ne fonctionne pas a cause du background: linear-gradient(to left top,#1681bb,#142ebe,#7b3add, #1fc29c, #7b3add, #243bc0, #1681bb);*/
+    color:white;
+    transform: scale(0.8);
+}
+@keyframes appear{
+    from{
+        transform: scale(0) rotate(180deg);
+    }
+    to{
+        transform: scale(1) rotate(0deg);
+    }
+}
