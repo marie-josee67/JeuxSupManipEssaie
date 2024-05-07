@@ -48,7 +48,7 @@ for(let i = 1; i<=50;i++){ // nombre de boite voulu 130 ou 10
         }
         //3 le joueur a cliquée sur une page déjà grisée il est juste informer
         else {
-            alert ("Case déjà cliquée concentre toi!");
+            alert ("Casse déjà cliquée concentre toi!");
         }
     })
 }
