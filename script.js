@@ -20,7 +20,7 @@ const board = document.querySelector ("#board");
 let nb=1;// on déclare une variable nb qui représentera le numéro attendue et s'incrémentera en cas de clc valide
 
 // crée plusieur boites:
-for(let i = 1; i<=33;i++){ // nombre de boite voulu 136 ou 10
+for(let i = 1; i<=50;i++){ // nombre de boite voulu 130 ou 10
     const newbox = box.cloneNode();// faire des clone de la boite 
     newbox.innerText=i;
     board.appendChild(newbox);
@@ -48,7 +48,7 @@ for(let i = 1; i<=33;i++){ // nombre de boite voulu 136 ou 10
         }
         //3 le joueur a cliquée sur une page déjà grisée il est juste informer
         else {
-            alert ("Case déjà cliquée !");
+            alert ("Case déjà cliquée concentre toi!");
         }
     })
 }
